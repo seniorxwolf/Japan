@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: rgba(255, 192, 203, 0.799);
+    overflow-x: hidden;
+}
+
+:root{
+    --main-color: black;
+    --secondary-color: grey;
+}
+
+/* @font-face { */
+/* font to be added here */
+/* } */
+
+section {
+    padding: 5%;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem 0rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 125%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav svg{
+    cursor: pointer;
+    z-index: 10;
+}
+
+.links {
+    position: absolute;
+    background-color: pink;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+}
+
+.links a {
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo h1 {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+.logo img {
+    width: 4rem;
+}
+
+.front-page{
+    min-height: 100vh;
+    color: white;
+}
+.selling-point {
+    padding-top: 25vh;
+    font-family: sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+    text-align: center;
+}
+
+.selling-point h3 {
+    font-family: sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+.ctas {
+    margin-top: 2rem;
+}
+.ctas button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.49);
+    margin: 1rem;
+}
+
+.cta-main {
+    background-color: grey;
+    color: white;
+}
+
+.cta-sec {
+    background-color: palevioletred;
+    color: white;
+}
+
+.hero {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cities {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+.pictures img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.Tokyo, .Kyoto, .Osaka{
+    position: relative;
+}
+.pictures h3 {
+    position: absolute;
+    color: white;
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.49);
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    font-size: 2rem;
+}
+
+.about  {
+    background-color: white;
+    color: pink;
+}
+
+.about h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.about p {
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+
+.about img {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    .pictures {
+        display: flex;
+        gap: 2rem;
+    }
+    .about img {
+        width: 50%;
+        transform: translate(50%, 10%);
+    }        
+}
